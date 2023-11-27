@@ -9,6 +9,7 @@ export const User = Type.Object(
     weight: Type.Optional(Type.Number()),
     is18: Type.Optional(Type.Boolean()),
     name: Type.Optional(Type.String()),
+    data: Type.Uint8Array(),
     successorId: Type.Optional(Type.Number()),
     role: Type.Optional(Role),
     posts: Type.Array(

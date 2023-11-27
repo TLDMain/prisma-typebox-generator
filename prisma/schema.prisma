@@ -19,6 +19,7 @@ model User {
   weight      Float?
   is18        Boolean?
   name        String?
+  data        Bytes
   successorId Int?
   role        Role     @default(USER)
   posts       Post[]
