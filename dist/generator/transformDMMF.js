@@ -73,6 +73,8 @@ function createTransformer(generatorName) {
       typeStr = `Type.${overrideType || 'String'}(${optionsStr})`;
     } else if (field.type === 'Boolean') {
       typeStr = `Type.${overrideType || 'Boolean'}(${optionsStr})`;
+    } else if (field.type === 'Bytes') {
+      typeStr = `Type.${overrideType || 'Uint8Array'}(${optionsStr})`;
     } else {
       typeStr = `::${field.type}::`;
       deps.add(field.type);
